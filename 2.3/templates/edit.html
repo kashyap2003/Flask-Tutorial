@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Edit Post</title>
+{% endblock %}
+
+{% block body %}
+<h1>All Posts!</h1>
+
+    <hr>
+        <h2>Create New Blog Post: </h2>
+        <form action="/posts" method="POST">
+            Title: <input type="text" name="title" id="title"> <!--* input#title[name=title] emment Feature *-->
+            <br>
+            Author: <input type="text" id="author" name="author">
+            <br>
+            Post: <input type="text" id="content" name="content">
+            <br>
+            <input type="submit" value="Post">
+        </form>
+    <hr>
+{% endblock %}
